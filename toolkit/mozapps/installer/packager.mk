@@ -172,8 +172,8 @@ endif
 	(cd $(DIST)/$(MOZ_PKG_DIR) && $(TAR) --exclude=precomplete $(TAR_CREATE_FLAGS) - .) | \
 	  (cd $(DESTDIR)$(installdir) && tar -xf -)
 	$(NSINSTALL) -D $(DESTDIR)$(bindir)
-	$(RM) -f $(DESTDIR)$(bindir)/$(MOZ_APP_NAME)
-	ln -s $(installdir)/$(MOZ_APP_NAME) $(DESTDIR)$(bindir)
+	$(RM) -f $(DESTDIR)$(bindir)/$(MOZ_APP_NAME)-developer-edition
+	ln -s $(installdir)/$(MOZ_APP_NAME) $(DESTDIR)$(bindir)/$(MOZ_APP_NAME)-developer-edition
 
 upload:
 	$(PYTHON3) -u $(MOZILLA_DIR)/build/upload.py --base-path $(ABS_DIST) $(UPLOAD_FILES)
