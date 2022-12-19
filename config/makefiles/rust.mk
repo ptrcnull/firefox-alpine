@@ -56,7 +56,9 @@ cargo_build_flags += $(MOZ_CARGO_BUILD_STD_ARGS)
 cargo_rustc_flags = $(CARGO_RUSTCFLAGS)
 # Enable link-time optimization for release builds.
 ifdef RUST_LIBRARY_LTO
-cargo_rustc_flags += -Clto
+ifeq (,$(findstring riscv64,$(RUST_TARGET)))
+cargo_rustc_flags += -Clto=thin
+endif
 endif
 
 ifdef CARGO_INCREMENTAL
