@@ -417,8 +417,8 @@ def _rustc_flags(cmd, substs, invocation):
     if cmd.kind == "library":
         flags += substs.get("MOZ_RUST_LIBRARY_RUSTCFLAGS")
 
-    if applies_library_lto(cmd.kind, cmd.lto, substs):
-        flags.append("-Clto")
+    if applies_library_lto(cmd.kind, cmd.lto, substs) and "riscv64" not in substs.get("RUST_TARGET"):
+        flags.append("-Clto=thin")
 
     flags += invocation.cargo_rustcflags
 
