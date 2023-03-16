@@ -16028,6 +16028,8 @@ typedef INT16_TYPE LogEst;
 #   define SQLITE_BYTEORDER 1234
 # elif defined(__BIG_ENDIAN__) && __BIG_ENDIAN__==1
 #   define SQLITE_BYTEORDER 4321
+# elif defined(__LITTLE_ENDIAN__) && __LITTLE_ENDIAN__==1
+#   define SQLITE_BYTEORDER 1234
 # elif defined(i386)    || defined(__i386__)      || defined(_M_IX86) ||    \
      defined(__x86_64)  || defined(__x86_64__)    || defined(_M_X64)  ||    \
      defined(_M_AMD64)  || defined(_M_ARM)        || defined(__x86)   ||    \
@@ -96625,7 +96627,7 @@ SQLITE_PRIVATE char *sqlite3VdbeExpandSql(
      return cnt;
   }
 
-#elif !defined(__STRICT_ANSI__) && (defined(__GNUC__) && defined(__ppc__))
+#elif 0
 
   __inline__ sqlite_uint64 sqlite3Hwtime(void){
       unsigned long long retval;
@@ -218998,6 +219000,8 @@ struct RtreeMatchArg {
 #   define SQLITE_BYTEORDER 1234
 # elif defined(__BIG_ENDIAN__) && __BIG_ENDIAN__==1
 #   define SQLITE_BYTEORDER 4321
+# elif defined(__LITTLE_ENDIAN__) && __LITTLE_ENDIAN__==1
+#   define SQLITE_BYTEORDER 1234
 # elif defined(i386)    || defined(__i386__)      || defined(_M_IX86) ||    \
      defined(__x86_64)  || defined(__x86_64__)    || defined(_M_X64)  ||    \
      defined(_M_AMD64)  || defined(_M_ARM)        || defined(__x86)   ||    \
