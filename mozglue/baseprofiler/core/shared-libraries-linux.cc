@@ -177,7 +177,7 @@ class MemoryMappedFile {
       return false;
     }
 
-#if defined(__x86_64__) || defined(__aarch64__) || \
+#if 1 || defined(__x86_64__) || defined(__aarch64__) || \
     (defined(__mips__) && _MIPS_SIM == _ABI64) ||  \
     !(defined(GP_OS_linux) || defined(GP_OS_android))
 
