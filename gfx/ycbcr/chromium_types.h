@@ -42,6 +42,10 @@
 #define ARCH_CPU_AARCH64_FAMILY 1
 #define ARCH_CPU_AARCH64 1
 #define ARCH_CPU_64_BITS 1
+#elif defined(__loongarch_lp64)
+#define ARCH_CPU_LOONGARCH_FAMILY 1
+#define ARCH_CPU_LOONGARCH64 1
+#define ARCH_CPU_64_BITS 1
 #else
 #warning Please add support for your architecture in chromium_types.h
 #endif
