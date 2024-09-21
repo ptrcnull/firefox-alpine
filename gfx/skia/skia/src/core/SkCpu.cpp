@@ -212,6 +212,14 @@ namespace {
         return features;
     }
 #elif defined(SK_CPU_LOONGARCH)
+    /* have to supply these defines for glibc 2.37- and musl */
+    #ifndef HWCAP_LOONGARCH_LSX
+    #define HWCAP_LOONGARCH_LSX	(1 << 4)
+    #endif
+    #ifndef HWCAP_LOONGARCH_LASX
+    #define HWCAP_LOONGARCH_LASX	(1 << 5)
+    #endif
+
     uint32_t read_cpu_features() {
         uint32_t features = 0;
         uint64_t hwcap = getauxval(AT_HWCAP);
