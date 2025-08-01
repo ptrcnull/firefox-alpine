@@ -211,6 +211,10 @@ mozilla::ipc::IPCResult GMPChild::RecvPreloadLibs(const nsCString& aLibs) {
       "libdl.so.2",
       "libpthread.so.0",
       "librt.so.1",
+      "libgcompat.so.0",
+      "ld-linux-x86-64.so.2",
+      "ld-linux-aarch64.so.1",
+      "ld-linux.so.2",
   };
 
   nsTArray<nsCString> libs;

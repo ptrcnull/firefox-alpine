@@ -1203,6 +1203,16 @@ RefPtr<GenericPromise> GMPParent::ParseChromiumManifest(
       // psapi.dll added for GetMappedFileNameW, which could possibly be avoided
       // in future versions, see bug 1383611 for details.
       mLibs = "dxva2.dll, ole32.dll, psapi.dll, shell32.dll, winmm.dll"_ns;
+#elif XP_LINUX
+      mLibs = "libgcompat.so.0"_ns
+#if defined(__x86_64__)
+        ", ld-linux-x86-64.so.2"_ns
+#elif defined(__aarch64__)
+        ", ld-linux-aarch64.so.1"_ns
+#elif defined(__i386__)
+        ", ld-linux.so.2"_ns
+#endif
+        ;
 #endif
       break;
 #ifdef MOZ_WMF_CDM
