@@ -315,6 +315,25 @@ def output_rust(objs, output_fd, ping_names_by_app_id, options={}):
     else:
         template_filename = "rust.jinja2"
         objs = get_metrics(objs)
+
+        # copy one metric of each type into a separate list
+        metric_per_type = {}
+        for category_name, category_value in objs.items():
+            for metric in category_value.values():
+                metric_per_type[metric.type] = metric
+
+        # remove types that we stubbed out
+        whitelist = ["fog.ipc"]
+        types_to_remove = ["counter", "event", "string", "boolean"]
+        for category_name, category_value in objs.items():
+            if category_name in whitelist: continue
+            objs[category_name] = {
+                name: metric
+                for name, metric in category_value.items()
+                if metric.type not in types_to_remove
+            }
+        objs['dummy'] = metric_per_type
+
         for category_name, category_value in objs.items():
             for metric in category_value.values():
                 # The constant is all uppercase and suffixed by `_MAP`
