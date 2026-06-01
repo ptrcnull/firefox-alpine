@@ -8,21 +8,18 @@ use nsstring::nsACString;
 
 #[no_mangle]
 pub extern "C" fn fog_boolean_test_has_value(id: u32, ping_name: &nsACString) -> bool {
-    with_metric!(BOOLEAN_MAP, id, metric, test_has!(metric, ping_name))
+    false
 }
 
 #[no_mangle]
 pub extern "C" fn fog_boolean_test_get_value(id: u32, ping_name: &nsACString) -> bool {
-    with_metric!(BOOLEAN_MAP, id, metric, test_get!(metric, ping_name))
+    false
 }
 
 #[no_mangle]
 pub extern "C" fn fog_boolean_test_get_error(id: u32, error_str: &mut nsACString) -> bool {
-    let err = with_metric!(BOOLEAN_MAP, id, metric, test_get_errors!(metric));
-    err.map(|err_str| error_str.assign(&err_str)).is_some()
+    false
 }
 
 #[no_mangle]
-pub extern "C" fn fog_boolean_set(id: u32, value: bool) {
-    with_metric!(BOOLEAN_MAP, id, metric, metric.set(value));
-}
+pub extern "C" fn fog_boolean_set(id: u32, value: bool) {}
