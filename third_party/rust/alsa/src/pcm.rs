@@ -1110,19 +1110,19 @@ impl Status {
     fn ptr(&self) -> *mut alsa::snd_pcm_status_t { self.0.as_ptr() as *const _ as *mut alsa::snd_pcm_status_t }
 
     pub fn get_htstamp(&self) -> timespec {
-        let mut h = timespec {tv_sec: 0, tv_nsec: 0};
+        let mut h = timespec::default();
         unsafe { alsa::snd_pcm_status_get_htstamp(self.ptr(), &mut h) };
         h
     }
 
     pub fn get_trigger_htstamp(&self) -> timespec {
-        let mut h = timespec {tv_sec: 0, tv_nsec: 0};
+        let mut h = timespec::default();
         unsafe { alsa::snd_pcm_status_get_trigger_htstamp(self.ptr(), &mut h) };
         h
     }
 
     pub fn get_audio_htstamp(&self) -> timespec {
-        let mut h = timespec {tv_sec: 0, tv_nsec: 0};
+        let mut h = timespec::default();
         unsafe { alsa::snd_pcm_status_get_audio_htstamp(self.ptr(), &mut h) };
         h
     }
