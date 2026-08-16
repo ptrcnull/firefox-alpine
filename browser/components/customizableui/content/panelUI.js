@@ -532,6 +532,9 @@ const PanelUI = {
       case "appMenu-help-button2":
         this.showSubView("PanelUI-helpView", target);
         break;
+      case "appMenu-about-button":
+        openTrustedLinkIn("chrome://browser/content/aboutDialog.xhtml", "tab");
+        break;
     }
   },
 
