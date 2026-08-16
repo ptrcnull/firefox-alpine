@@ -178,3 +178,24 @@
     content: url("chrome://global/skin/icons/loading.svg");
   }
 }
+
+@media (max-width: 600px) {
+  #clientBox {
+    flex-direction: column;
+  }
+  #leftBox {
+    margin-inline-start: 0;
+  }
+  vbox#rightBox {
+    width: auto;
+  }
+  label.bottom-link {
+    margin: 0;
+    flex: 1;
+    align-content: center;
+  }
+}
+
+#aboutDialogContainer {
+  overflow: scroll;
+}
