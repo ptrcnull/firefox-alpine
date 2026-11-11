@@ -93,14 +93,17 @@ elif CONFIG["OS_TARGET"] == "Linux" and CONFIG["TARGET_CPU"] in (
     UNIFIED_SOURCES += [
         "core/ProfilerCPUFreq-linux-android.cpp",
         "gecko/nsProfiler.cpp",
-        "lul/AutoObjectMapper.cpp",
-        "lul/LulCommon.cpp",
-        "lul/LulDwarf.cpp",
-        "lul/LulDwarfSummariser.cpp",
-        "lul/LulElf.cpp",
-        "lul/LulMain.cpp",
-        "lul/platform-linux-lul.cpp",
     ]
+    if CONFIG["TARGET_CPU"] != "loongarch64":
+        UNIFIED_SOURCES += [
+            "lul/AutoObjectMapper.cpp",
+            "lul/LulCommon.cpp",
+            "lul/LulDwarf.cpp",
+            "lul/LulDwarfSummariser.cpp",
+            "lul/LulElf.cpp",
+            "lul/LulMain.cpp",
+            "lul/platform-linux-lul.cpp",
+        ]
     if CONFIG["TARGET_CPU"] == "x86_64":
         UNIFIED_SOURCES += [
             "core/PowerCounters-linux.cpp",
@@ -109,7 +112,7 @@ elif CONFIG["OS_TARGET"] == "Linux" and CONFIG["TARGET_CPU"] in (
         SOURCES += [
             "core/EHABIStackWalk.cpp",
         ]
-    if not CONFIG["MOZ_CRASHREPORTER"]:
+    if not CONFIG["MOZ_CRASHREPORTER"] and CONFIG["TARGET_CPU"] != "loongarch64":
         SOURCES += [
             "/toolkit/crashreporter/google-breakpad/src/common/linux/elfutils.cc",
             "/toolkit/crashreporter/google-breakpad/src/common/linux/file_id.cc",
