@@ -224,7 +224,7 @@ BOOL WINAPI GetThreadInformation(
     defined(GP_PLAT_amd64_android) || defined(GP_PLAT_x86_android) ||       \
     defined(GP_PLAT_mips64_linux) || defined(GP_PLAT_arm64_linux) ||        \
     defined(GP_PLAT_arm64_android) || defined(GP_PLAT_amd64_freebsd) ||     \
-    defined(GP_PLAT_arm64_freebsd) || defined(GP_PLAT_loongarch64_linux) || \
+    defined(GP_PLAT_arm64_freebsd) ||                                    \
     defined(GP_PLAT_riscv64_linux)
 #  define HAVE_NATIVE_UNWIND
 #  define USE_LUL_STACKWALK
