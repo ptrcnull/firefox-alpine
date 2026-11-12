@@ -48,11 +48,17 @@
         'lib/pkixnss.cpp',
       ],
       'dependencies': [
-        '<(DEPTH)/exports.gyp:nss_exports',
         '<(DEPTH)/exports.gyp:nss_mozpkix_exports',
       ],
       'includes': [
         'mozpkix_cxx.gypi',
+      ],
+      'conditions': [
+        [ 'mozpkix_only==0', {
+          'dependencies': [
+            '<(DEPTH)/exports.gyp:nss_exports'
+          ],
+        }],
       ],
       # These are libraries rather than ldflags, and apply to every dependent
       # rather than only the final link, so that they also reach whatever the
