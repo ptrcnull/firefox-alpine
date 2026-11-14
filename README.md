@@ -23,6 +23,28 @@ Nightlies are released as often as I can be bothered, APK files will be attached
 [3t]: https://github.com/ptrcnull/firefox-alpine/releases?q=aurora
 [4t]: https://github.com/ptrcnull/firefox-alpine/releases?q=nightly
 
+### Local setup
+
+Put this into `.git/config` before fetching tags to avoid a mess of irrelevant tags:
+
+```
+[remote "origin"]
+	url = https://github.com/mozilla-firefox/firefox/
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	fetch = ^refs/tags/B2G*
+	fetch = ^refs/tags/FENNEC*
+	fetch = ^refs/tags/FIREFOX-ANDROID*
+	fetch = ^refs/tags/GECKO*
+	fetch = ^refs/tags/MOZILLA*
+	fetch = ^refs/tags/PRE*
+	fetch = ^refs/tags/RELEASE_BASE*
+	fetch = ^refs/tags/SEAMONKEY*
+	fetch = ^refs/tags/THUNDERBIRD*
+	fetch = ^refs/tags/UPDATE*
+	fetch = ^refs/tags/bsmedberg*
+	fetch = ^refs/tags/chromium*
+```
+
 *Original README follows:*
 
 <hr>
