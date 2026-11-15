@@ -2,12 +2,15 @@ Hi! This repo is a fork that allows for easier maintenance of patches for Alpine
 
 | Package | Branch name | Tags |
 | ------- | ----------- | ---- |
-| `community/firefox`                 | [`aports-stable`][1]  | [`aports-stable-*`][1t]  |
-| `community/firefox-esr`             | [`aports-esr`][2]     | [`aports-esr-*`][2t]     |
-| `testing/firefox-developer-edition` | [`aports-aurora`][3]  | [`aports-aurora-*`][3t]  |
-| `testing/firefox-nightly`           | [`aports-nightly`][4] | [`aports-nightly-*`][4t] |
+| `community/firefox`                 | [`aports-stable`][1]      | [`Releases`][1t] |
+| `community/firefox-esr`             | [`aports-esr`][2]         | [`Releases`][2t] |
+| `community/thunderbird`             | [`aports-thunderbird`][3] | [`Releases`][3t] |
+| `testing/firefox-developer-edition` | [`aports-aurora`][4]      | [`Releases`][4t] |
+| `testing/firefox-nightly`           | [`aports-nightly`][5]     | [`Releases`][5t] |
 
 Tags are created whenever the package builds successfully for all architectures supported in Alpine.
+
+Thunderbird needs the `comm/` submodule from [ptrcnull/thunderbird-desktop](https://github.com/ptrcnull/thunderbird-desktop).
 
 Nightlies are released as often as I can be bothered, APK files will be attached to releases.
 
@@ -22,6 +25,7 @@ Nightlies are released as often as I can be bothered, APK files will be attached
 [2t]: https://github.com/ptrcnull/firefox-alpine/releases?q=esr
 [3t]: https://github.com/ptrcnull/firefox-alpine/releases?q=aurora
 [4t]: https://github.com/ptrcnull/firefox-alpine/releases?q=nightly
+[5t]: https://github.com/ptrcnull/firefox-alpine/releases?q=thunderbird
 
 ### Local setup
 
