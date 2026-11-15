@@ -16,16 +16,17 @@ Nightlies are released as often as I can be bothered, APK files will be attached
 
 [1]: https://github.com/ptrcnull/firefox-alpine/tree/aports-stable
 [2]: https://github.com/ptrcnull/firefox-alpine/tree/aports-esr
-[3]: https://github.com/ptrcnull/firefox-alpine/tree/aports-aurora
-[4]: https://github.com/ptrcnull/firefox-alpine/tree/aports-nightly
+[3]: https://github.com/ptrcnull/firefox-alpine/tree/aports-thunderbird
+[4]: https://github.com/ptrcnull/firefox-alpine/tree/aports-aurora
+[5]: https://github.com/ptrcnull/firefox-alpine/tree/aports-nightly
 
 <!-- GitHub does not allow searching tags 😔 -->
 
 [1t]: https://github.com/ptrcnull/firefox-alpine/releases
 [2t]: https://github.com/ptrcnull/firefox-alpine/releases?q=esr
-[3t]: https://github.com/ptrcnull/firefox-alpine/releases?q=aurora
-[4t]: https://github.com/ptrcnull/firefox-alpine/releases?q=nightly
-[5t]: https://github.com/ptrcnull/firefox-alpine/releases?q=thunderbird
+[3t]: https://github.com/ptrcnull/firefox-alpine/releases?q=thunderbird
+[4t]: https://github.com/ptrcnull/firefox-alpine/releases?q=aurora
+[5t]: https://github.com/ptrcnull/firefox-alpine/releases?q=nightly
 
 ### Local setup
 
