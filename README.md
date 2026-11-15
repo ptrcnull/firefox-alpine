@@ -1,12 +1,12 @@
 Hi! This repo is a fork that allows for easier maintenance of patches for Alpine Linux.
 
-| Package | Branch name | Tags |
-| ------- | ----------- | ---- |
-| `community/firefox`                 | [`aports-stable`][1]      | [`Releases`][1t] |
-| `community/firefox-esr`             | [`aports-esr`][2]         | [`Releases`][2t] |
-| `community/thunderbird`             | [`aports-thunderbird`][3] | [`Releases`][3t] |
-| `testing/firefox-developer-edition` | [`aports-aurora`][4]      | [`Releases`][4t] |
-| `testing/firefox-nightly`           | [`aports-nightly`][5]     | [`Releases`][5t] |
+| Package | Branch name | Releases |
+| ------- | ----------- | -------- |
+| `community/firefox`                 | [`aports-stable`][1]      | [Releases][1t] |
+| `community/firefox-esr`             | [`aports-esr`][2]         | [Releases][2t] |
+| `community/thunderbird`             | [`aports-thunderbird`][3] | [Releases][3t] |
+| `testing/firefox-developer-edition` | [`aports-aurora`][4]      | [Releases][4t] |
+| `testing/firefox-nightly`           | [`aports-nightly`][5]     | [Releases][5t] |
 
 Tags are created whenever the package builds successfully for all architectures supported in Alpine.
 
