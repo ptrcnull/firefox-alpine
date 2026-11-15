@@ -22,7 +22,7 @@ Nightlies are released as often as I can be bothered, APK files will be attached
 
 <!-- GitHub does not allow searching tags 😔 -->
 
-[1t]: https://github.com/ptrcnull/firefox-alpine/releases
+[1t]: https://github.com/ptrcnull/firefox-alpine/releases?q=firefox
 [2t]: https://github.com/ptrcnull/firefox-alpine/releases?q=esr
 [3t]: https://github.com/ptrcnull/firefox-alpine/releases?q=thunderbird
 [4t]: https://github.com/ptrcnull/firefox-alpine/releases?q=aurora
