@@ -1,32 +1,55 @@
 Hi! This repo is a fork that allows for easier maintenance of patches for Alpine Linux.
 
-| Package | Branch name | Releases |
-| ------- | ----------- | -------- |
-| `community/firefox`                 | [`aports-stable`][1]      | [Releases][1t] |
-| `community/firefox-esr`             | [`aports-esr`][2]         | [Releases][2t] |
-| `community/thunderbird`             | [`aports-thunderbird`][3] | [Releases][3t] |
-| `testing/firefox-developer-edition` | [`aports-aurora`][4]      | [Releases][4t] |
-| `testing/firefox-nightly`           | [`aports-nightly`][5]     | [Releases][5t] |
+<table>
+	<tr>
+		<td width="18%"><img width="100%" src="/assets/svg/firefox-logo-esr.svg"></td>
+		<td width="18%"><img width="100%" src="/assets/svg/firefox-logo.svg"></td>
+		<td width="23%" align="center"><img width="75%" src="/assets/svg/thunderbird-logo.svg"></td>
+		<td width="18%"><img width="100%" src="/assets/svg/firefox-logo-aurora.svg"></td>
+		<td width="18%"><img width="100%" src="/assets/svg/firefox-logo-nightly.svg"></td>
+	</tr>
+	<tr>
+		<td align="center"><h3>ESR</h3></td>
+		<td align="center"><h3>Release</h3></td>
+		<td align="center"><h3>Thunderbird</h3></td>
+		<td align="center"><h3>Aurora</h3></td>
+		<td align="center"><h3>Nightly</h3></td>
+	</tr>
+	<tr>
+        <td align="center"><b>153.7.0</b></td>
+       	<td align="center"><b>160.0</b></td>
+       	<td align="center"><b>160.0</b></td>
+       	<td align="center"><b>161.0b3</b></td>
+       	<td align="center"><b>162.0b2</b></td>
+   	</tr>
+    <tr>
+		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-esr"><code>aports-esr</code></a></td>
+		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-stable"><code>aports-stable</code></a></td>
+		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-thunderbird"><code>aports-thunderbird</code></a></td>
+		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-aurora"><code>aports-aurora</code></a></td>
+		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-nightly"><code>aports-nightly</code></a></td>
+	</tr>
+    <tr>
+		<td><a href="https://pkgs.alpinelinux.org/package/edge/community/x86_64/firefox-esr">pkgs.a.o</a></td>
+		<td><a href="https://pkgs.alpinelinux.org/package/edge/community/x86_64/firefox">pkgs.a.o</a></td>
+		<td><a href="https://pkgs.alpinelinux.org/package/edge/community/x86_64/thunderbird">pkgs.a.o</a></td>
+		<td><a href="https://pkgs.alpinelinux.org/package/edge/testing/x86_64/firefox-developer-edition">pkgs.a.o</a></td>
+		<td><a href="https://gitlab.alpinelinux.org/ptrcnull/aports/-/tree/ffnightly/testing/firefox-nightly">gitlab.a.o</a></td>
+	</tr>
+   	<tr>
+        <td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=esr">Releases</a></td>
+        <td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=firefox">Releases</a></td>
+        <td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=thunderbird">Releases</a></td>
+        <td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=aurora">Releases</a></td>
+        <td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=nightly">Releases</a></td>
+    </tr>
+</table>
 
 Tags are created whenever the package builds successfully for all architectures supported in Alpine.
 
 Thunderbird needs the `comm/` submodule from [ptrcnull/thunderbird-desktop](https://github.com/ptrcnull/thunderbird-desktop).
 
 Nightlies are released as often as I can be bothered, APK files will be attached to releases.
-
-[1]: https://github.com/ptrcnull/firefox-alpine/tree/aports-stable
-[2]: https://github.com/ptrcnull/firefox-alpine/tree/aports-esr
-[3]: https://github.com/ptrcnull/firefox-alpine/tree/aports-thunderbird
-[4]: https://github.com/ptrcnull/firefox-alpine/tree/aports-aurora
-[5]: https://github.com/ptrcnull/firefox-alpine/tree/aports-nightly
-
-<!-- GitHub does not allow searching tags 😔 -->
-
-[1t]: https://github.com/ptrcnull/firefox-alpine/releases?q=firefox
-[2t]: https://github.com/ptrcnull/firefox-alpine/releases?q=esr
-[3t]: https://github.com/ptrcnull/firefox-alpine/releases?q=thunderbird
-[4t]: https://github.com/ptrcnull/firefox-alpine/releases?q=aurora
-[5t]: https://github.com/ptrcnull/firefox-alpine/releases?q=nightly
 
 ### Local setup
 
