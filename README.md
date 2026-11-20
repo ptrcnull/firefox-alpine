@@ -17,10 +17,10 @@ Hi! This repo is a fork that allows for easier maintenance of patches for Alpine
 	</tr>
 	<tr>
         <td align="center"><b>153.7.0</b></td>
+       	<td align="center"><b>160.0.1</b></td>
        	<td align="center"><b>160.0</b></td>
-       	<td align="center"><b>160.0</b></td>
-       	<td align="center"><b>161.0b3</b></td>
-       	<td align="center"><b>162.0a3</b></td>
+       	<td align="center"><b>161.0b5</b></td>
+       	<td align="center"><b>163.0a1</b></td>
    	</tr>
     <tr>
 		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-esr"><code>aports-esr</code></a></td>
