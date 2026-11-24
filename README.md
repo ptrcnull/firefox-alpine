@@ -19,7 +19,7 @@ Hi! This repo is a fork that allows for easier maintenance of patches for Alpine
 		<td align="center" data-product="esr"><b>153.7.0</b></td>
 		<td align="center" data-product="stable"><b>160.0.1</b></td>
 		<td align="center" data-product="thunderbird"><b>160.0</b></td>
-		<td align="center" data-product="aurora"><b>161.0b5</b></td>
+		<td align="center" data-product="aurora"><b>162.0b1</b></td>
 		<td align="center" data-product="nightly"><b>163.0a1</b></td>
 	</tr>
 	<tr>
