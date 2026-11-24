@@ -219,7 +219,7 @@ class Patcher:
             commit.format_patch(output_file_tmp)
 
             if commit.repo != self.repo:
-                fixup_patch_file(output_file_tmp, commit.repo)
+                fixup_patch_file(output_file_tmp, commit.repo.relative_to(self.repo))
 
             if output_file.is_file():
                 idiff = interdiff(str(output_file), str(output_file_tmp))
