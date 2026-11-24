@@ -16,33 +16,33 @@ Hi! This repo is a fork that allows for easier maintenance of patches for Alpine
 		<td align="center"><h3>Nightly</h3></td>
 	</tr>
 	<tr>
-        <td align="center"><b>153.7.0</b></td>
-       	<td align="center"><b>160.0.1</b></td>
-       	<td align="center"><b>160.0</b></td>
-       	<td align="center"><b>161.0b5</b></td>
-       	<td align="center"><b>163.0a1</b></td>
-   	</tr>
-    <tr>
+		<td align="center" data-product="esr"><b>153.7.0</b></td>
+		<td align="center" data-product="stable"><b>160.0.1</b></td>
+		<td align="center" data-product="thunderbird"><b>160.0</b></td>
+		<td align="center" data-product="aurora"><b>161.0b5</b></td>
+		<td align="center" data-product="nightly"><b>163.0a1</b></td>
+	</tr>
+	<tr>
 		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-esr"><code>aports-esr</code></a></td>
 		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-stable"><code>aports-stable</code></a></td>
 		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-thunderbird"><code>aports-thunderbird</code></a></td>
 		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-aurora"><code>aports-aurora</code></a></td>
 		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-nightly"><code>aports-nightly</code></a></td>
 	</tr>
-    <tr>
+	<tr>
 		<td><a href="https://pkgs.alpinelinux.org/package/edge/community/x86_64/firefox-esr">pkgs.a.o</a></td>
 		<td><a href="https://pkgs.alpinelinux.org/package/edge/community/x86_64/firefox">pkgs.a.o</a></td>
 		<td><a href="https://pkgs.alpinelinux.org/package/edge/community/x86_64/thunderbird">pkgs.a.o</a></td>
 		<td><a href="https://pkgs.alpinelinux.org/package/edge/testing/x86_64/firefox-developer-edition">pkgs.a.o</a></td>
 		<td><a href="https://gitlab.alpinelinux.org/ptrcnull/aports/-/tree/ffnightly/testing/firefox-nightly">gitlab.a.o</a></td>
 	</tr>
-   	<tr>
-        <td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=esr">Releases</a></td>
-        <td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=firefox">Releases</a></td>
-        <td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=thunderbird">Releases</a></td>
-        <td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=aurora">Releases</a></td>
-        <td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=nightly">Releases</a></td>
-    </tr>
+	<tr>
+		<td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=esr">Releases</a></td>
+		<td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=firefox">Releases</a></td>
+		<td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=thunderbird">Releases</a></td>
+		<td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=aurora">Releases</a></td>
+		<td><a href="https://github.com/ptrcnull/firefox-alpine/releases?q=nightly">Releases</a></td>
+	</tr>
 </table>
 
 Tags are created whenever the package builds successfully for all architectures supported in Alpine.
