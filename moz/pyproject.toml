@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moz"
+version = "0.1.0"
+description = "Small helper for managing Mozilla packages in Alpine"
+readme = "README.md"
+authors = [
+    { name = "Patrycja Rosa", email = "python@ptrcnull.me" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+moz = "moz:main"
