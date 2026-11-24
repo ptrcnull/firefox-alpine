@@ -16,11 +16,11 @@ Hi! This repo is a fork that allows for easier maintenance of patches for Alpine
 		<td align="center"><h3>Nightly</h3></td>
 	</tr>
 	<tr>
-		<td align="center" data-product="esr"><b>153.7.0</b></td>
-		<td align="center" data-product="stable"><b>160.0.1</b></td>
-		<td align="center" data-product="thunderbird"><b>160.0</b></td>
+		<td align="center" data-product="esr"><b>153.8.0</b></td>
+		<td align="center" data-product="stable"><b>161.0</b></td>
+		<td align="center" data-product="thunderbird"><b>161.0</b></td>
 		<td align="center" data-product="aurora"><b>162.0b1</b></td>
-		<td align="center" data-product="nightly"><b>163.0a1</b></td>
+		<td align="center" data-product="nightly"><b>163.0a2</b></td>
 	</tr>
 	<tr>
 		<td><a href="https://github.com/ptrcnull/firefox-alpine/tree/aports-esr"><code>aports-esr</code></a></td>
